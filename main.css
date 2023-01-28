@@ -1,0 +1,705 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+/*Reset All*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Variables de Fuentes y Colores */
+:root{
+  --fuente_Header:'Press Start 2P', cursive;
+  --fuente_titulos:  'Imprima', sans-serif;
+  --fuente_body: 'Roboto', sans-serif;
+  --fuente_formularios: 'Roboto', sans-serif;
+}
+/*Portada Styles*/
+
+.bodyPortada {
+  margin: 0;
+  padding: 0;
+  background-color: #C8EFFD;
+}
+
+.portada-box {
+  width: 40vw;
+  height: 60vh;
+  background: #000;
+  color: #fff;
+  font-family: var(--fuente_formularios);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+
+.portada-box .avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 30% 50% 0 0;
+  position: absolute;
+  top: -50px;
+  left: calc(43% - 50px);
+}
+
+.portada-box h1 {
+  margin-top: 100px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: var(--fuente_Header);
+  font-size: 2em;
+
+}
+
+.portada-box input {
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.portada-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FD6773;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  bottom: 0;
+}
+
+.portada-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #13E29D;
+  color: #000;
+}
+
+.portada-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.portada-box a:hover {
+  color: #fff;
+}
+/*Home Styles*/
+body{
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ff7d97' fill-opacity='0.15'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.bodyHome {
+  margin: 0;
+  padding: 0;
+}
+
+.header-home {
+  display: flex;
+  background-color: #FF9EB1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-family: var(--fuente_header);
+  font-size:25px;
+  font-weight: bold;
+ 
+}
+.header-home a{
+	text-decoration:none ;
+	color:black;
+	
+  font-family:var(fuente_titulos) ;
+  font-weight: bold;
+  color: #000;
+  margin-left: 20px;
+}
+.navbar-home{
+  background-color: #C8EFFD;
+  position: sticky;
+  top: 0;
+  
+  
+}
+
+.navbar-home ul{
+
+display:flex;
+flex-direction: row;
+justify-content:space-between;
+padding:15px;
+list-style:none;
+
+}
+
+.navbar-home ul li a{
+  text-decoration: none;
+  font-family: var(--fuente_titulos);
+  color:#010405;
+  font-weight:bold;
+  
+
+}
+.header-home img{
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  margin-right: 20px;
+ 
+}
+.navbar-home ul li a:hover{
+  color: #fff;
+}
+
+
+
+.contenedor-cursos{
+  width : 100%;
+ display:grid;
+ grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+
+}
+.subtitulos{
+  font-family: var(fuente_titulos);
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  color: #fFF;
+}
+
+.curso {
+  grid-column: 2/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #C8EFFD;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+ 
+}
+.curso img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+.footer-home .card-f img{
+  width: 150px;
+  height: 150px;
+}
+.curso-content {
+  width: 100%;
+  
+  padding: 20px;
+ 
+}
+
+.curso-content h3 {
+ 
+margin:auto;
+font-size: 30px;
+font-family: var(fuente_titulos);
+font-weight: bold;
+color: #000;
+margin-bottom: 20px;
+}
+.curso-content p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: var(--fuente_body);
+  margin-bottom: 10px;
+}
+.curso-content span, .back
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.curso-content span a, .back a{
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--fuente_body);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #59cdf7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  
+}
+
+
+.curso-content span a:hover,.back span a:hover{
+  background-color: #FD6773;
+  color: #fff;
+  cursor: pointer;
+
+ }
+ .footer-home{
+  background-color: #C8EFFD;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+ }
+ .card-f{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.card-f a{
+  text-decoration: none;
+}
+.card-f a h2 {
+ 
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+ 
+   
+ }
+
+/*Login Styles*/
+.bodyLogin {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  font-family: var(--fuente_formularios);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: var(--fuente_Header);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FD6773;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #13E29D;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+
+/*Pagina de contacto*/
+.content-contact{
+  width:600px;
+  margin:auto;
+  padding: 60px;
+}
+.container-contacto{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+}
+
+
+.contacto{
+
+  background-color: #C8EFFD;
+  margin:auto;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.contacto img{
+  width: 200px;
+  height: 200px;
+  image-rendering: optimizeSpeed;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.contacto h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  font-family: var(--fuente_titulos);
+
+}
+
+.contacto p{
+  font-family: var(--fuente_body);
+}
+.content-contact h1{
+  font-size:30px;
+  text-align: center;
+  color: #ffff
+  ;
+  margin-bottom: 2em;
+}
+#c1,#c2{
+  grid-column: 1/2;
+  
+}
+#c3,#c4{
+  grid-column: 2/3;
+}
+
+.content-contact span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-contact span a{
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: var(--fuente_body);
+  font-weight: bold;
+  background-color: #46ccfd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.content-contact span a:hover{
+  background-color: #FD6773;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*Pagina de registrarse*/
+
+.bodyregister {
+  margin: 0;
+  padding: 0;
+  background-color: #C8EFFD;
+  
+}
+
+.register-box {
+  width: 420px;
+  height: 620px;
+  background: #000;
+  color: #fff;
+  font-family: var(--fuente_formularios);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.register-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: var(--fuente_Header);
+  font-size: 22px;
+}
+
+.register-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.register-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-box input[type="text"], .register-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.register-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FD6773;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.register-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #13E29D;
+  color: #000;
+}
+
+.register-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.register-box a:hover {
+  color: #fff;
+}
+
+/*Div que usaremos para la tabla periodica*/
+.pt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pt > *{
+    width: 120%;
+}
+.pt a{
+    color:black;
+    font-size: medium;
+    text-decoration: none;
+    margin: 1.5px ;
+    border: black solid 0.1px;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+.pt a:hover {
+    color: white !important;
+    background-color: blue !important; 
+}
+/* Div para toda la tabla periodica*/
+.divr{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+/*Colores de la tabla periodica*/
+.item1{
+    background-color: #C8AAD2;
+}
+.item2{
+    background-color: #F7CBAC;
+}
+.item3{
+    background-color: #FFE69A;
+}
+.item4{
+    background-color: yellow;
+}
+.item5{
+    background-color: #cfb3da;
+}
+.item6{
+    background-color: #a6ee54;
+}
+.item7{
+    background-color: #dffdfc;
+}
+.item8{
+    background-color: pink;
+}
+.item9{
+    background-color: #3DC0F0;
+}
+.item10{
+    background-color: rgb(150, 150, 207);
+}
+
+/*Para que no aparezca nada en los espacios vacios*/
+.pt .nothing{
+    background-color: transparent !important;
+    border-color: transparent;
+}
+.pt .nothing:hover{
+    background-color: transparent !important;
+}
+/*Pagina de registro cursos*/
+.contenedor-regcursos{
+  width : 100%;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+
+}
+.reg-box {
+  grid-column: 3/5;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 50%;
+  background-color: #C8EFFD;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.reg-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 240px;
+  left: calc(50% - 35px);
+}
+
+.reg-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.reg-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.reg-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.reg-box input[type="text"], .reg-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000;
+  font-size: 16px;
+}
+
+.reg-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #FD6773;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.reg-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #13E29D;
+  color: #000;
+}
+
+.reg-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.reg-box a:hover {
+  color: #fff;
+}
+select{
+ 
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+ 
+}

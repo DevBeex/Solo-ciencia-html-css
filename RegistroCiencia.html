@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Registrarse en curso de Ciencia</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="main.css">
+        <link rel ="icon" href="img/scienceICON.png">
+   </head>
+   <body>
+          <header class="header-home">
+          
+               <a style="text-decoration:none;color:black;font-family: var(--fuente_Header) ;font-size: 40px;" href="Home.html">Solo Ciencia</a>
+                <img src="img/scienceICON.png" alt="IconSoloCiencia" >
+        
+           </header>
+           <nav class="navbar-home">
+                <ul style="font-family: var(--fuente_titulos);">
+                    <li><a href="RegistroCiencia.html">Registrarse en curso de Ciencia</a></li>
+                    <li><a href="RegistroQuimica.html">Registrarse en curso de Quimica y Biologia</a></li>
+                    <li><a href="RegistroProgramacion.html">Registrarse en curso de Programacion</a></li>
+                    <li><a href="referencias.html">Referencias</a></li>
+                    <li><a href="Contacto.html">Contactanos</a></li>
+                </ul>
+           </nav>
+            <section>
+                <h2 class="subtitulos" style="font-family: var(--fuente_titulos)               
+                ";>Registrarse en curso de Ciencia</h2>
+                <div class="contenedor-regcursos" >
+                    <div class="reg-box">
+                        <img src="img/scienceICON.png" class="avatar" alt="Avatar Image">
+                        
+                        <form action="ciencia.jsp" method="post">
+                        <!-- USERNAME INPUT -->
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Introduzca nombre" name="nombre" id="nombre">
+                        <!-- ID INPUT -->
+                        <label for="cedula">Cedula</label>
+                        <input type="text" placeholder="Introduzca CIP" name="cedula" id="cedula">
+                        <!-- DATE INPUT -->
+                        <label for="fecha">Fecha de inicio del curso</label>
+                        <select name="fecha" id="fecha">
+                            <option value = "20 Julio">20 de julio</option>
+                            <option value = "15 Octubre">15 de octube</option>
+                            <option value= "14 Noviembre">14 de noviembre</option>
+                        </select>
+                         
+                        <input  type="submit" value="Registrarse">
+                        
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                <span class="back"><a href="Home.html">Regresar</a></span>
+                <h2 class="subtitulos"  style="font-family: var(--fuente_titulos);">Acerca de:</h2>
+            </section>
+
+            <footer class="footer-home"style="font-family: var(--fuente_body);">
+                <div class="card-f">
+                       
+                     <a href="referencias.html">
+                        <img src="img/referencias.png" alt="referencias" />
+                        <h2>Referencias</h2>
+                </a> 
+                </div>
+                <div class="card-f">
+                          
+                        <a href="Contacto.html">
+                                <img src="img/contactenos.png" alt="referencias" />
+                                <h2>Contactenos</h2>
+                        </a> 
+                   </div>
+            </footer>
+
+    </body>
+ </html>
